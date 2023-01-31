@@ -1,11 +1,17 @@
 import Head from "next/head";
-// import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import Navbar from "../components/Navbar.jsx";
 
 export default function Home() {
   return (
     <>
-      <h2 className="text-red-900 text-3xl">Hello world</h2>
+      <Head>
+        <title>Blog Ihza</title>
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head>
+
+      <Navbar />
     </>
   );
 }

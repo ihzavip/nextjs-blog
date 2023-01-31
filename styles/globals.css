@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Libre+Baskerville&family=Roboto+Mono:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Roboto Mono', monospace; */
+
 body {
-  background-color: black;
+  /* background-color: rgb(244 239 235); */
+  font-weight: 400;
 }
+
