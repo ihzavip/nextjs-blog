@@ -1,27 +1,17 @@
-import Image from "next/image";
-
 export default function Navbar() {
   return (
     <>
-      <nav className="w-full px-6 h-24 bg-beige flex items-center justify-between">
-        <Image src="/images/favicon.ico" height={60} width={60} alt="logo" />
-        <svg
-          className=""
-          width="48"
-          height="42"
-          viewBox="0 0 48 42"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            class="pwm-anim"
-            width="48"
-            height="1"
-            rx="0.5"
-            fill="black"
-          ></rect>
-          <rect y="7.15625" width="48" height="1" rx="0.5" fill="black"></rect>
-        </svg>
+      <nav className="fixed w-full px-5 h-16 bg-beige/10 backdrop-blur-3xl border-b border-b-charcoal/40 flex items-center justify-between">
+        <div className="logo-mobile flex items-center">
+          <div className="h-12 w-6 bg-charcoal relative">
+            <div className="h-1 w-1 rounded-full bg-white absolute top-1/2 right-1 -translate-y-1/2"></div>
+          </div>
+          <div className="text-charcoal uppercase ml-2 carlo text-xl">
+            <p>Ihza's</p>
+            <p>Journal</p>
+          </div>
+        </div>
+        <span className="carlo">menu</span>
       </nav>
     </>
   );
