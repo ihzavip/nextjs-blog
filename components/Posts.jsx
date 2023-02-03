@@ -1,20 +1,20 @@
 const Posts = () => {
   return (
     <section className="px-2 pt-12 h-screen">
-      <h2 className="text-4xl text-center mb-6 carlo">Posts</h2>
+      <h2 className="mb-6 text-4xl text-center carlo">Posts</h2>
 
-      <div className="flex flex-col justify-center items-center gap-2">
-        <div className="w-full h-52 overflow-hidden border border-charcoal">
+      <div className="flex flex-col gap-2 justify-center items-center">
+        <div className="overflow-hidden w-full h-52 border border-charcoal">
           <img
             src="/images/first-post-image.jpg"
-            className="object-cover h-full w-full brightness-75"
+            className="object-cover w-full h-full brightness-75"
             alt="first post image"
           />
         </div>
         <p className="text-xs roboto text-charcoal/80">02 February 2023</p>
         <h3>The reality of self taught programmer.</h3>
 
-        <div className="h-[1px] w-full bg-charcoal/60 my-10"></div>
+        <div className="my-10 w-full h-[1px] bg-charcoal/60"></div>
       </div>
     </section>
   );

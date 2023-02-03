@@ -1,12 +1,12 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="fixed w-full px-5 h-16 bg-beige/10 backdrop-blur-3xl border-b border-b-charcoal/40 flex items-center justify-between">
-        <div className="logo-mobile flex items-center">
-          <div className="h-12 w-6 bg-charcoal relative">
-            <div className="h-1 w-1 rounded-full bg-white absolute top-1/2 right-1 -translate-y-1/2"></div>
+      <nav className="flex absolute justify-between items-center py-4 px-5 w-full border-b bg-beige/80 backdrop-blur-sm border-b-charcoal">
+        <div className="flex items-center w-full logo-mobile">
+          <div className="relative w-6 h-12 bg-charcoal">
+            <div className="absolute right-1 top-1/2 w-1 h-1 bg-white rounded-full -translate-y-1/2"></div>
           </div>
-          <div className="text-charcoal uppercase ml-2 carlo text-xl">
+          <div className="ml-2 text-xl uppercase text-charcoal carlo">
             <p>Ihza's</p>
             <p>Journal</p>
           </div>

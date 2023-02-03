@@ -1,8 +1,8 @@
 const WebAbout = () => {
   return (
-    <section className="bg-creamy/40 h-full px-6 py-24">
+    <section className="py-24 px-6 h-full bg-creamy/40">
       <div>
-        <h3 className="inter text-3xl leading-9 text-black">
+        <h3 className="text-3xl leading-9 text-black inter">
           This blog will serve as my journal as I pursuing a career in tech
           industries.
         </h3>
@@ -24,7 +24,7 @@ const WebAbout = () => {
 
       <a
         href="#"
-        className="pt-12 text-black/90 decoration-black inline-block roboto uppercase text-sm underline underline-offset-8 tracking-[.2em]"
+        className="inline-block pt-12 text-sm underline uppercase text-black/90 decoration-black roboto underline-offset-8 tracking-[.2em]"
       >
         more about me
       </a>
