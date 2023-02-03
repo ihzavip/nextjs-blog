@@ -1,6 +1,6 @@
 const WebAbout = () => {
   return (
-    <section className="py-24 px-6 h-full bg-creamy/40">
+    <section className="py-24 px-6 h-screen bg-creamy/40">
       <div>
         <h3 className="text-3xl leading-9 text-black inter">
           This blog will serve as my journal as I pursuing a career in tech

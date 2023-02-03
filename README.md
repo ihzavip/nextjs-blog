@@ -8,3 +8,7 @@ The default export of _app.js is a top-level React component that wraps all the 
 next/image optimization make my browser & terminal crash so I'll add it later
 
 now do the desktop.
+
+I kinda figure out the layout now I just need to design some components.
+
+I guess it will be done in 3 days.

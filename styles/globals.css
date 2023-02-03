@@ -2,10 +2,7 @@
 
 @font-face {
   font-family: "montecarloregular";
-  src: url("/fonts/montecarlo-webfont.woff2") format("woff2"),
-    url("/fonts/montecarlo-webfont.woff") format("woff"),
-    url("/fonts/montecarlo-webfont.ttf") format("truetype"),
-    url("/fonts/montecarlo-webfont.svg#montecarloregular") format("svg");
+  src: url("/fonts/montecarlo-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
