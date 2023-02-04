@@ -11,7 +11,7 @@ export default function Navbar() {
             <p>Journal</p>
           </div>
         </div>
-        <span className="carlo">menu</span>
+        <span className="text-black carlo">menu</span>
       </nav>
     </>
   );

@@ -1,33 +1,34 @@
 const WebAbout = () => {
   return (
-    <section className="py-24 px-6 h-screen bg-creamy/40">
+    <section className="py-12 px-6 h-full lg:px-20 bg-creamy/60">
       <div>
-        <h3 className="text-3xl leading-9 text-black inter">
-          This blog will serve as my journal as I pursuing a career in tech
-          industries.
+        <h3 className="text-3xl leading-9 text-left text-black lg:text-5xl inter">
+          Blog ini akan menjadi catatan saya selama mengejar karir di industri
+          teknologi.
         </h3>
 
-        <p className="mt-10 text-sm leading-6">
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-          exercitation amet. Nisi anim cupidatat excepteur officia.
-          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
-          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-          consectetur et est culpa et culpa duis.
-        </p>
-      </div>
+        <div className="max-w-3xl lg:ml-20">
+          <div className="flex flex-col gap-4 mt-12 text-sm leading-6 lg:flex-row lg:gap-12 lg:text-md lg:mt-22">
+            <p className="">
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nctetur et est culpa et culpa duis.
+            </p>
+            <p className="">
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nctetur et est culpa et culpa duis.
+            </p>
+          </div>
 
-      <a
-        href="#"
-        className="inline-block pt-12 text-sm underline uppercase text-black/90 decoration-black roboto underline-offset-8 tracking-[.2em]"
-      >
-        more about me
-      </a>
+          <a
+            href="#"
+            className="inline-block mt-6 text-sm underline uppercase text-black/90 decoration-black roboto underline-offset-8 tracking-[.2em]"
+          >
+            tentang saya
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

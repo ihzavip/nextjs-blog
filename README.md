@@ -1,3 +1,4 @@
+#refactor later
 
 I added tailwindCSS but it's not compatible with the official documentation in tailwindCSS. In Next JS doc it's suggest to use their github code.
 
@@ -12,3 +13,7 @@ now do the desktop.
 I kinda figure out the layout now I just need to design some components.
 
 I guess it will be done in 3 days.
+
+the main feature components is mostly done, i need to add footer - social links etc
+
+
