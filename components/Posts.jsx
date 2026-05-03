@@ -1,66 +1,112 @@
+import Link from "next/link";
+
+const PostCard = ({ title, date, category, excerpt, image, slug }) => (
+  <Link href={`/posts/${slug}`} className="group block border border-divider hover:border-parchment-faint transition-colors duration-300">
+    <div className="overflow-hidden h-52">
+      <img
+        src={image}
+        className="h-full w-full object-cover brightness-50 transition-all duration-500 group-hover:brightness-[0.6] group-hover:scale-[1.02]"
+        alt={title}
+      />
+    </div>
+
+    <div className="p-6">
+      <div className="mb-4 flex items-center gap-3">
+        <span className="roboto text-[9px] uppercase tracking-[.3em] text-gold">
+          {category}
+        </span>
+        <span className="text-divider">·</span>
+        <span className="roboto text-[9px] text-parchment-muted">{date}</span>
+      </div>
+
+      <h2 className="font-display text-xl font-normal text-parchment leading-snug mb-3">
+        {title}
+      </h2>
+
+      <p className="font-lora text-sm text-parchment-muted leading-relaxed line-clamp-3">
+        {excerpt}
+      </p>
+    </div>
+  </Link>
+);
+
 const Posts = () => {
+  const posts = [
+    {
+      slug: "first-post",
+      title: "The reality of the self-taught programmer.",
+      date: "02 Feb 2023",
+      category: "Life",
+      excerpt:
+        "No one tells you about the silence. The long, directionless hours you spend staring at a blank editor, wondering whether you are actually learning or just performing the act of learning.",
+      image: "/images/first-post-image.jpg",
+    },
+    {
+      slug: "sitting-with-not-knowing",
+      title: "On learning to sit with not knowing.",
+      date: "14 Mar 2023",
+      category: "Reflection",
+      excerpt:
+        "There is a particular kind of discomfort that comes with not knowing where you stand. Not failure — just the suspended feeling of being somewhere in the middle with no clear marker.",
+      image: "/images/first-post-image.jpg",
+    },
+    {
+      slug: "stop-collecting-tutorials",
+      title: "Why I stopped collecting tutorials and started breaking things.",
+      date: "01 Apr 2023",
+      category: "Programming",
+      excerpt:
+        "At some point I had fifty browser tabs open and nothing to show for it. The turning point was deleting them all and building something that did not work yet.",
+      image: "/images/first-post-image.jpg",
+    },
+    {
+      slug: "reading-vs-writing-code",
+      title: "The gap between reading code and writing it.",
+      date: "19 Apr 2023",
+      category: "Programming",
+      excerpt:
+        "Reading someone else's clean code feels like understanding it. Writing your own from scratch quickly reveals how thin that understanding actually was.",
+      image: "/images/first-post-image.jpg",
+    },
+    {
+      slug: "comparing-yourself",
+      title: "On comparing yourself to people who started earlier.",
+      date: "03 May 2023",
+      category: "Life",
+      excerpt:
+        "The programmer who has been coding since fifteen did not start with more talent. They started with more time. Those are not the same thing.",
+      image: "/images/first-post-image.jpg",
+    },
+    {
+      slug: "learning-c",
+      title: "What learning C taught me about everything above it.",
+      date: "22 May 2023",
+      category: "Programming",
+      excerpt:
+        "Dropping down to C and managing memory by hand made JavaScript feel less like magic and more like a very well-organised set of decisions someone made on your behalf.",
+      image: "/images/first-post-image.jpg",
+    },
+  ];
+
   return (
-    <>
-      {/* <h2 className="mb-10 text-4xl text-center lg:mb-20 carlo">Posts</h2> */}
-      <section className="flex flex-col gap-12 py-12 px-4 lg:gap-y-44 lg:px-0">
-        <div className="flex flex-col justify-center items-center mx-auto w-full border lg:flex-row lg:items-start lg:border-8 border-charcoal h-[75vh] lg:w-fit">
-          <div className="overflow-hidden w-full h-full lg:w-96">
-            <img
-              src="/images/first-post-image.jpg"
-              className="object-cover w-full h-full brightness-75"
-              alt="first post image"
-            />
-          </div>
+    <section id="posts" className="bg-ink py-24 px-6 lg:px-12">
+      <div className="mx-auto max-w-6xl">
 
-          <div className="flex flex-col gap-9 justify-start items-center py-6 px-4 text-center lg:py-12 lg:px-8 max-w-[24rem]">
-            <div className="space-y-2">
-              <h3 className="text-xl leading-6 text-black">
-                The reality of self taught programmer.
-              </h3>
-              <p className="text-[10px] roboto text-charcoal/80">
-                02 February 2023
-              </p>
-            </div>
-            <p className="text-sm leading-5 text-left">
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur
-            </p>
-          </div>
+        <div className="mb-14 flex items-center gap-6">
+          <span className="roboto text-[10px] uppercase tracking-[.25em] text-parchment-muted">
+            Recent Writing
+          </span>
+          <div className="flex-1 h-px bg-divider" />
         </div>
-        <div className="flex flex-col justify-center items-center mx-auto w-full border lg:flex-row lg:items-start lg:border-8 border-charcoal h-[75vh] lg:w-fit">
-          <div className="overflow-hidden w-full h-full lg:w-96">
-            <img
-              src="/images/first-post-image.jpg"
-              className="object-cover w-full h-full brightness-75"
-              alt="first post image"
-            />
-          </div>
 
-          <div className="flex flex-col gap-9 justify-start items-center py-6 px-4 text-center lg:py-12 lg:px-8 max-w-[24rem]">
-            <div className="space-y-2">
-              <h3 className="text-xl leading-6 text-black">
-                The reality of self taught programmer.
-              </h3>
-              <p className="text-[10px] roboto text-charcoal/80">
-                02 February 2023
-              </p>
-            </div>
-            <p className="text-sm leading-5 text-left">
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur
-            </p>
-          </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, i) => (
+            <PostCard key={i} {...post} />
+          ))}
         </div>
-      </section>
-    </>
+
+      </div>
+    </section>
   );
 };
 

@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
-import WebAbout from "../components/WebAbout.jsx";
 import Posts from "../components/Posts.jsx";
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <WebAbout />
       <Posts />
     </>
   );

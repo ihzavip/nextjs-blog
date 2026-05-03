@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Libre+Baskerville&family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@500&family=Roboto+Mono:wght@400;500&display=swap");
 
 @font-face {
   font-family: "montecarloregular";
@@ -11,35 +11,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font-family: 'Inter', sans-serif; */
-/* font-family: 'Libre Baskerville', serif; */
-/* font-family: 'Roboto Mono', monospace; */
-
 body {
-  background-color: rgb(244 239 235);
-  font-family: "Libre Baskerville", serif;
-  font-weight: 500;
-  color: rgb(33, 31, 28); /*charcoal*/
-  letter-spacing: 0.05em;
-  height: 100vh;
-  width: 100vw;
+  background-color: #060504;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #e0d5c8;
+  letter-spacing: 0.01em;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
-.hero-height {
-  height: calc(100vh - 96px);
-}
-
 .carlo {
-  font-family: "montecarloregular";
+  font-family: "montecarloregular", cursive;
 }
 
 .roboto {
   font-family: "Roboto Mono", monospace;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .inter {
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+/* Fluid hero headline */
+.text-hero {
+  font-size: clamp(3rem, 8.5vw, 8.5rem);
+  line-height: 0.93;
+}
+
+.hero-height {
+  height: calc(100vh - 64px);
+}
+
+/* Article drop cap */
+.drop-cap::first-letter {
+  float: left;
+  font-family: "DM Serif Display", serif;
+  font-size: 5rem;
+  line-height: 0.78;
+  padding-right: 0.12em;
+  padding-top: 0.06em;
+  color: #e0d5c8;
+}
+
+/* Article body link */
+.article-body a {
+  color: #c9a96e;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.3);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.article-body a:hover {
+  border-color: #c9a96e;
 }
