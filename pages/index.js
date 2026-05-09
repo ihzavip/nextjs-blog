@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
 import Posts from "../components/Posts.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Posts />
+      <Footer />
     </>
   );
 }
