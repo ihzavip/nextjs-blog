@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer.jsx";
 
 export default function About() {
   return (
@@ -128,6 +129,8 @@ export default function About() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
