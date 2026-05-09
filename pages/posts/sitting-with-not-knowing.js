@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer.jsx";
 import { getReadingTime } from "../../lib/readingTime";
 
 const body = (
@@ -130,6 +131,7 @@ export default function SittingWithNotKnowing() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
